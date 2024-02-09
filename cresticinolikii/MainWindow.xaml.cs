@@ -95,7 +95,7 @@ namespace cresticinolikii
 
         private bool CheckForWin(string symbol)
         {
-            // check horizontal and vertical combinations
+            
             for (int i = 0; i < 3; i++)
             {
                 if (buttons[i].Content?.ToString() == symbol && buttons[i + 3].Content?.ToString() == symbol && buttons[i + 6].Content?.ToString() == symbol)
@@ -108,7 +108,7 @@ namespace cresticinolikii
                 }
             }
 
-            // check diagonal combinations
+           
             if (buttons[0].Content?.ToString() == symbol && buttons[4].Content?.ToString() == symbol && buttons[8].Content?.ToString() == symbol)
             {
                 return true;
